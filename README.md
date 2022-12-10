@@ -7,3 +7,13 @@ VIM way is not for everyone, but it should certainly be given a shot. If you get
 But it's fairly easy to quit `:q!`—if you didn't get the joke, this one's gonna need some work.
 
 This repo contains branches that serve as a reference to help transition our neovim experience to the next level.
+
+Branch
+- 01-editor-noplugins
+ This contains various settings and keymaps which provide a better text editing experience when using Neovim.
+
+- 02-editor-plugins-support
+ ✓ Installed nvim-lua/plenary.nvim
+ ✓ Installed nvim-tree/nvim-web-devicons
+ ✓ Installed nvim-tree/nvim-tree.lua
+ ✓ Installed ellisonleao/gruvbox.nvim
