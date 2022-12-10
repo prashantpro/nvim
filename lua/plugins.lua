@@ -46,6 +46,45 @@ local plugins = {
 			require("lualine").setup()
 		end,
 	},
+
+	-- Treesitter
+	{
+		"nvim-treesitter/nvim-treesitter",
+		module = "nvim-treesitter",
+		event = "VimEnter",
+		run = function()
+			local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+			ts_update()
+		end,
+		config = function()
+			require("config.treesitter").setup()
+		end,
+		-- requires = {
+		--   { "nvim-treesitter/nvim-treesitter-textobjects", event = "BufReadPre" },
+		--   { "RRethy/nvim-treesitter-textsubjects", event = "BufReadPre" }
+		-- }
+	},
+
+	-- Indent lines
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		requires = "nvim-treesitter/nvim-treesitter",
+		config = function()
+			require("indent_blankline").setup()
+		end,
+	},
+
+	-- Better Comment
+	{
+		"numToStr/Comment.nvim",
+		keys = { "gc", "gcc", "gbc" },
+		config = function()
+			require("config.comment").setup()
+		end,
+	},
+
+	-- Better surround => add, delete, change surroundings
+	{ "tpope/vim-surround", event = "BufReadPre" },
 }
 
 return plugins

@@ -30,3 +30,12 @@ Branch
   - ✓ Installed akinsho/nvim-bufferline.lua
   - ✓ Installed famiu/bufdelete.nvim
   - ✓ Installed nvim-lualine/lualine.nvim
+
+- 04-editor-improved-editing
+
+  We add support for syntax highlighting with treesitter parsers. Indentation guides, Better Commenting support, Edit the surrounding, with options like `cs"'`
+  
+  - ✓ Installed nvim-treesitter/nvim-treesitter
+  - ✓ Installed lukas-reineke/indent-blankline.nvim
+  - ✓ Installed numToStr/Comment.nvim
+  - ✓ Installed tpope/vim-surround
