@@ -64,3 +64,12 @@ keymap("v", "p", '"_dP', default_opts)
 
 -- File Explorer using nvim-tree
 keymap("n", "<leader>e", ":NvimTreeToggle<CR>") --  nvim-tree toggle
+
+-- Buffers with bufferline
+keymap("n", "<C-[>", "<Cmd>BufferLineMovePrev<CR>") --  Prev Buffer
+keymap("n", "<C-]>", "<Cmd>BufferLineMoveNext<CR>") --  Next Buffer
+keymap("n", "<C-w>", ":Bdelete<CR>") --  Delete current buffer from bufdelete.nvim
+
+-- Delete a buffer (no plugin), without closing the window, see https://stackoverflow.com/q/4465095/6064933
+-- keymap("n", "<C-w>", "<Cmd>bprevious <bar> bdelete #<CR>", default_opts)
+

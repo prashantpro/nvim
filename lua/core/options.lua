@@ -65,3 +65,8 @@ opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 opt.shell = "fish"
 
+-- Statusline
+opt.laststatus = 3 -- Global statusline
+opt.cmdheight = 0 -- 0 or 1
+opt.showmode = false -- Do not need to show the mode. We use the statusline instead.
+

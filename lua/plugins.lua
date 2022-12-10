@@ -20,6 +20,32 @@ local plugins = {
 			require("config.nvim-tree").setup()
 		end,
 	},
+
+  -- Buffer line
+	{
+		"akinsho/nvim-bufferline.lua",
+		tag = "v3.*",
+    requires = "nvim-tree/nvim-web-devicons",
+		event = "BufReadPre",
+		config = function()
+			require("config.bufferline").setup()
+		end,
+	},
+	-- delete buffer but preserve window layout
+	{
+		"famiu/bufdelete.nvim",
+		config = function()
+			require("bufdelete")
+		end,
+	},
+
+	-- Status line
+	{
+		"nvim-lualine/lualine.nvim",
+		config = function()
+			require("lualine").setup()
+		end,
+	},
 }
 
 return plugins
