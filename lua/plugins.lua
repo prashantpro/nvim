@@ -85,6 +85,28 @@ local plugins = {
 
 	-- Better surround => add, delete, change surroundings
 	{ "tpope/vim-surround", event = "BufReadPre" },
+
+	-- Git
+	{
+		"lewis6991/gitsigns.nvim",
+		tag = "release",
+		requires = { "nvim-lua/plenary.nvim" },
+		config = function()
+			require("config.gitsigns").setup()
+		end,
+		event = "BufReadPre",
+	},
+
+	-- Terminal
+	{
+		"akinsho/toggleterm.nvim",
+		keys = { [[<C-\>]] },
+		cmd = { "ToggleTerm", "TermExec" },
+		module = { "toggleterm", "toggleterm.terminal" },
+		config = function()
+			require("config.toggleterm").setup()
+		end,
+	},
 }
 
 return plugins

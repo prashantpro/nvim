@@ -39,3 +39,10 @@ Branch
   - ✓ Installed lukas-reineke/indent-blankline.nvim
   - ✓ Installed numToStr/Comment.nvim
   - ✓ Installed tpope/vim-surround
+
+- 05-editor-powertools
+
+  Git support using gitsigns and a terminal with a handy shortcut `<C-\>`
+  
+  - ✓ Installed lewis6991/gitsigns.nvim
+  - ✓ Installed akinsho/toggleterm.nvim
