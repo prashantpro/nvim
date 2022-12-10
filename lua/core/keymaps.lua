@@ -62,3 +62,5 @@ keymap("n", "<leader>q", ":q<CR>", default_opts) -- fast neovim quit
 -- Paste over currently selected text without yanking it
 keymap("v", "p", '"_dP', default_opts)
 
+-- File Explorer using nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>") --  nvim-tree toggle
