@@ -21,3 +21,12 @@ Branch
   - ✓ Installed nvim-tree/nvim-web-devicons
   - ✓ Installed nvim-tree/nvim-tree.lua
   - ✓ Installed ellisonleao/gruvbox.nvim
+
+- 03-editor-bufr-status
+
+  This gives us a global status line and buffers. Buffer with tab like experience using `<C-[>` for prev bufr and `<C-]>` for the next.
+  Deletion of buffer with `<C-w>` which preserves the window layout.
+  
+  - ✓ Installed akinsho/nvim-bufferline.lua
+  - ✓ Installed famiu/bufdelete.nvim
+  - ✓ Installed nvim-lualine/lualine.nvim
