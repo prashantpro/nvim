@@ -10,10 +10,14 @@ This repo contains branches that serve as a reference to help transition our neo
 
 Branch
 - 01-editor-noplugins
- This contains various settings and keymaps which provide a better text editing experience when using Neovim.
+
+  This contains various settings and keymaps which provide a better text editing experience when using Neovim.
 
 - 02-editor-plugins-support
- ✓ Installed nvim-lua/plenary.nvim
- ✓ Installed nvim-tree/nvim-web-devicons
- ✓ Installed nvim-tree/nvim-tree.lua
- ✓ Installed ellisonleao/gruvbox.nvim
+
+  This contains packer support with the below plugins configured. This gives us a colorscheme and file explorer.
+  
+  - ✓ Installed nvim-lua/plenary.nvim
+  - ✓ Installed nvim-tree/nvim-web-devicons
+  - ✓ Installed nvim-tree/nvim-tree.lua
+  - ✓ Installed ellisonleao/gruvbox.nvim
