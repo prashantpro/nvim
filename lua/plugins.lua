@@ -107,6 +107,23 @@ local plugins = {
 			require("config.toggleterm").setup()
 		end,
 	},
+
+	-- Search
+	{
+		"nvim-telescope/telescope.nvim",
+		event = { "VimEnter" },
+		config = function()
+			require("config.telescope").setup()
+		end,
+		requires = {
+			"nvim-lua/popup.nvim",
+			"nvim-lua/plenary.nvim",
+			{
+				"nvim-telescope/telescope-fzf-native.nvim",
+				run = "make",
+			}
+		},
+	},
 }
 
 return plugins

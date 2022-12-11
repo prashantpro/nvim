@@ -42,7 +42,11 @@ Branch
 
 - 05-editor-powertools
 
-  Git support using gitsigns and a terminal with a handy shortcut `<C-\>`
+  Git support using gitsigns, Search, and a terminal with a handy shortcut `<C-\>`
   
   - ✓ Installed lewis6991/gitsigns.nvim
   - ✓ Installed akinsho/toggleterm.nvim
+  - ✓ Installed nvim-telescope/telescope.nvim
+  - ✓ Installed nvim-lua/popup.nvim
+  - ✓ Installed nvim-telescope/telescope-fzf-native.nvim
+

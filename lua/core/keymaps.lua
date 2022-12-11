@@ -73,3 +73,16 @@ keymap("n", "<C-w>", ":Bdelete<CR>") --  Delete current buffer from bufdelete.nv
 -- Delete a buffer (no plugin), without closing the window, see https://stackoverflow.com/q/4465095/6064933
 -- keymap("n", "<C-w>", "<Cmd>bprevious <bar> bdelete #<CR>", default_opts)
 
+-- Telescope
+keymap("n", "<c-p>", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
+keymap("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap("n", "<leader>km", "<cmd>Telescope keymaps<cr>") -- list available keymaps
+
+-- telescope git commands
+keymap("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
+keymap("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
+keymap("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
+keymap("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
