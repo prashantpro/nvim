@@ -70,3 +70,6 @@ opt.laststatus = 3 -- Global statusline
 opt.cmdheight = 0 -- 0 or 1
 opt.showmode = false -- Do not need to show the mode. We use the statusline instead.
 
+-- Lsp related
+-- Reduce updatetime which affects CursorHold for hover diagnostic
+opt.updatetime = 250
