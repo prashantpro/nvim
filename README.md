@@ -50,3 +50,25 @@ Branch
   - ✓ Installed nvim-lua/popup.nvim
   - ✓ Installed nvim-telescope/telescope-fzf-native.nvim
 
+- 06-base-ide
+
+  Completion plugins and snippets  
+    - ✓ Installed hrsh7th/nvim-cmp
+    - ✓ Installed hrsh7th/cmp-buffer
+    - ✓ Installed hrsh7th/cmp-path
+    - ✓ Installed hrsh7th/cmp-nvim-lsp
+    - ✓ Installed saadparwaiz1/cmp_luasnip
+    - ✓ Installed L3MON4D3/LuaSnip
+    - ✓ Installed rafamadriz/friendly-snippets
+
+  Install and manage LSP servers, DAP servers, linters, and formatters
+    - ✓ Installed neovim/nvim-lspconfig
+    - ✓ Installed williamboman/mason.nvim
+    - ✓ Installed williamboman/mason-lspconfig.nvim
+    - ✓ Installed WhoIsSethDaniel/mason-tool-installer.nvim
+
+  Helps with function signatures
+    - ✓ Installed ray-x/lsp_signature.nvim
+
+  Injects LSP diagnostics, code actions, formatting, and more
+    - ✓ Installed jose-elias-alvarez/null-ls.nvim
