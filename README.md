@@ -66,9 +66,16 @@ Branch
     - ✓ Installed williamboman/mason.nvim
     - ✓ Installed williamboman/mason-lspconfig.nvim
     - ✓ Installed WhoIsSethDaniel/mason-tool-installer.nvim
+      - installs stylua, shfmt, prettierd, shellcheck, eslint_d, js-debug-adapter
 
   Helps with function signatures
     - ✓ Installed ray-x/lsp_signature.nvim
 
   Injects LSP diagnostics, code actions, formatting, and more
     - ✓ Installed jose-elias-alvarez/null-ls.nvim
+
+  Debug
+    - ✓ Installed mfussenegger/nvim-dap
+    - ✓ Installed rcarriga/nvim-dap-ui
+    - ✓ Installed theHamsta/nvim-dap-virtual-text
+    - ✓ Installed mxsdev/nvim-dap-vscode-js

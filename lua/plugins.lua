@@ -154,6 +154,7 @@ local plugins = {
   -- Install and manage LSP servers, DAP servers, linters, and formatters
   {
     "neovim/nvim-lspconfig", -- Collection of configurations for built-in LSP client
+    event = "BufRead",
     config = function()
       require("config.ide.lsp").setup()
     end,
@@ -163,6 +164,7 @@ local plugins = {
       "WhoIsSethDaniel/mason-tool-installer.nvim",
       {
         "ray-x/lsp_signature.nvim",
+        event = "BufRead",
         config = function()
           require("config.ide.lsp-signature").setup()
         end,
@@ -178,6 +180,21 @@ local plugins = {
     end,
   },
 
+  -- Debugging
+  {
+    "mfussenegger/nvim-dap", -- DAP Client
+    -- event = "BufWinEnter",
+    requires = {
+      "rcarriga/nvim-dap-ui", -- Debugger user interface
+      "theHamsta/nvim-dap-virtual-text", -- virtual text support to nvim-dap
+      -- configurations for the official vscode js debugger, which runs javascript/typescript
+      -- (both in-browser and node.js)
+      "mxsdev/nvim-dap-vscode-js",
+    },
+    config = function()
+      require("config.ide.debug").setup()
+    end,
+  },
 }
 
 return plugins

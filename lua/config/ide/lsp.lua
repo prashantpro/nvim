@@ -50,7 +50,7 @@ function M.setup()
   })
 
   require("mason-tool-installer").setup({
-    ensure_installed = { "stylua", "shfmt", "prettierd", "shellcheck" },
+    ensure_installed = { "stylua", "shfmt", "prettierd", "shellcheck", "eslint_d", "js-debug-adapter" },
     auto_update = false,
     run_on_start = true,
     start_delay = 3000, -- 3 second delay
@@ -64,6 +64,7 @@ function M.setup()
       "cssls",
       "jsonls",
       "sumneko_lua",
+      "tailwindcss"
     },
     automatic_installation = false,
   })
@@ -117,6 +118,9 @@ function M.setup()
     local hl = "DiagnosticSign" .. type
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
   end
+
+  vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+  vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
 end
 
 return M
