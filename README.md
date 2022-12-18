@@ -1,4 +1,4 @@
-# Neovim config (Text Editor to Power Editor to IDE level)
+# Neovim config (Minimal editor to Power Editor to IDE level)
 
 After referring to multiple docs, articles, example configs, and videos, I have finally settled on a Neovim configuration that is perfect—for my needs.
 This repo serves as a reference of how one could configure and setup Neovim, for that **lightweight yet productive IDE** most of us keep searching for.
@@ -8,12 +8,15 @@ But it's fairly easy to quit `:q!`—if you didn't get the joke, this one's gonn
 
 This repo contains branches that serve as a reference to help transition our neovim experience to the next level.
 
-Branch
-- 01-editor-noplugins
+## Branches showcasing levels of config
+
+Each branch represents a level of config that takes Neovim experience from bare minimum to a powerful Editor/IDE level.
+
+### 01-editor-noplugins
 
   This contains various settings and keymaps which provide a better text editing experience when using Neovim.
 
-- 02-editor-plugins-support
+### 02-editor-plugins-support
 
   This contains packer support with the below plugins configured. This gives us a colorscheme and file explorer.
   
@@ -22,7 +25,7 @@ Branch
   - ✓ Installed nvim-tree/nvim-tree.lua
   - ✓ Installed ellisonleao/gruvbox.nvim
 
-- 03-editor-bufr-status
+### 03-editor-bufr-status
 
   This gives us a global status line and buffers. Buffer with tab like experience using `<C-[>` for prev bufr and `<C-]>` for the next.
   Deletion of buffer with `<C-w>` which preserves the window layout.
@@ -31,7 +34,7 @@ Branch
   - ✓ Installed famiu/bufdelete.nvim
   - ✓ Installed nvim-lualine/lualine.nvim
 
-- 04-editor-improved-editing
+### 04-editor-improved-editing
 
   We add support for syntax highlighting with treesitter parsers. Indentation guides, Better Commenting support, Edit the surrounding, with options like `cs"'`
   
@@ -40,7 +43,7 @@ Branch
   - ✓ Installed numToStr/Comment.nvim
   - ✓ Installed tpope/vim-surround
 
-- 05-editor-powertools
+### 05-editor-powertools
 
   Git support using gitsigns, Search, and a terminal with a handy shortcut `<C-\>`
   
@@ -50,32 +53,37 @@ Branch
   - ✓ Installed nvim-lua/popup.nvim
   - ✓ Installed nvim-telescope/telescope-fzf-native.nvim
 
-- 06-base-ide
+### 06-base-ide
 
-  Completion plugins and snippets  
-    - ✓ Installed hrsh7th/nvim-cmp
-    - ✓ Installed hrsh7th/cmp-buffer
-    - ✓ Installed hrsh7th/cmp-path
-    - ✓ Installed hrsh7th/cmp-nvim-lsp
-    - ✓ Installed saadparwaiz1/cmp_luasnip
-    - ✓ Installed L3MON4D3/LuaSnip
-    - ✓ Installed rafamadriz/friendly-snippets
+  Completion plugins and snippets 
+
+  - ✓ Installed hrsh7th/nvim-cmp
+  - ✓ Installed hrsh7th/cmp-buffer
+  - ✓ Installed hrsh7th/cmp-path
+  - ✓ Installed hrsh7th/cmp-nvim-lsp
+  - ✓ Installed saadparwaiz1/cmp_luasnip
+  - ✓ Installed L3MON4D3/LuaSnip
+  - ✓ Installed rafamadriz/friendly-snippets
 
   Install and manage LSP servers, DAP servers, linters, and formatters
-    - ✓ Installed neovim/nvim-lspconfig
-    - ✓ Installed williamboman/mason.nvim
-    - ✓ Installed williamboman/mason-lspconfig.nvim
-    - ✓ Installed WhoIsSethDaniel/mason-tool-installer.nvim
-      - installs stylua, shfmt, prettierd, shellcheck, eslint_d, js-debug-adapter
+
+  - ✓ Installed neovim/nvim-lspconfig
+  - ✓ Installed williamboman/mason.nvim
+  - ✓ Installed williamboman/mason-lspconfig.nvim
+  - ✓ Installed WhoIsSethDaniel/mason-tool-installer.nvim
+    - installs stylua, shfmt, prettierd, shellcheck, eslint_d, js-debug-adapter
 
   Helps with function signatures
-    - ✓ Installed ray-x/lsp_signature.nvim
+
+  - ✓ Installed ray-x/lsp_signature.nvim
 
   Injects LSP diagnostics, code actions, formatting, and more
-    - ✓ Installed jose-elias-alvarez/null-ls.nvim
+  
+  - ✓ Installed jose-elias-alvarez/null-ls.nvim
 
   Debug
-    - ✓ Installed mfussenegger/nvim-dap
-    - ✓ Installed rcarriga/nvim-dap-ui
-    - ✓ Installed theHamsta/nvim-dap-virtual-text
-    - ✓ Installed mxsdev/nvim-dap-vscode-js
+
+  - ✓ Installed mfussenegger/nvim-dap
+  - ✓ Installed rcarriga/nvim-dap-ui
+  - ✓ Installed theHamsta/nvim-dap-virtual-text
+  - ✓ Installed mxsdev/nvim-dap-vscode-js
